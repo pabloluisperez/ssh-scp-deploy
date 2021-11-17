@@ -9,9 +9,9 @@ if [ -z "$KEY" ] && [ -z "$PASSWORD" ]; then
 fi
 
 if [[ -n "$KEY" ]]; then
-    echo "🔑 Using key file...";
+    echo "🔑 Usando clave privada...";
     source /with_key.sh;
 else
-    echo "🔑 Using password...";
+    echo "🔑 Usando password...";
     source /with_pass.sh;
 fi
