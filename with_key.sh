@@ -20,6 +20,7 @@ fi
     echo "🚚 Copiando archivos por scp..." &&
     ls -la &&
     pwd &&
+    df -h &&
     cat docker/complete-app-dockerization/docker-compose.yml &&
     scp ${INPUT_SSH_OPTIONS} ${INPUT_SCP_OPTIONS} -P "${INPUT_PORT}" -r ${INPUT_LOCAL} ${INPUT_USER}@${INPUT_HOST}:"${INPUT_REMOTE}" && 
     echo "🙌 Ficheros copiados por scp"
